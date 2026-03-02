@@ -1,12 +1,8 @@
 {
-    "name": "@ajaykm/axios-refresh-core",
-    "version": "1.0.0",
-    "publishConfig": {
-      "access": "public"
-    },
-    "release": {
-      "branches": ["main"]
-    },
+  "name": "@ajaykm/axios-refresh-core",
+  "version": "0.0.0-development",
+  "publishConfig": { "access": "public" },
+  
     "type": "module",
     "main": "dist/index.cjs",
     "module": "dist/index.mjs",
