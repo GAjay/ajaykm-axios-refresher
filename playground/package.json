@@ -3,6 +3,6 @@
     "scripts": { "dev": "vite" },
     "dependencies": {
       "axios": "^1",
-      "@ajaykm/axios-refresh-core": "workspace:*"
+      "@gajay/axios-refresh-core": "workspace:*"
     }
   }

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { createAxiosRefresh } from "@ajaykm/axios-refresh-core";
+import { createAxiosRefresh } from "@gajay/axios-refresh-core";
 
 const api = axios.create();
 
