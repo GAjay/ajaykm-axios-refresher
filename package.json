@@ -11,12 +11,15 @@
     },
     "devDependencies": {
         "@semantic-release/changelog": "^6",
+        "@semantic-release/commit-analyzer": "^13.0.1",
         "@semantic-release/git": "^10",
-        "@semantic-release/github": "^9",
-        "@semantic-release/npm": "^11",
+        "@semantic-release/github": "^9.2.6",
+        "@semantic-release/npm": "^11.0.3",
+        "@semantic-release/release-notes-generator": "^14.1.0",
         "@types/jest": "^29",
         "jest": "^29",
-        "semantic-release": "^23",
+        "semantic-release": "^23.1.1",
+        "semantic-release-monorepo": "^8.0.2",
         "ts-jest": "^29",
         "tsup": "^8",
         "typescript": "^5"
