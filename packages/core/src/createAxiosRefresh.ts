@@ -15,6 +15,8 @@ export const createAxiosRefresh = (config: any) => {
   let isRefreshing = false;
   let queue: any[] = [];
 
+  // frist
+
   const processQueue = (token: string) => {
     queue.forEach(cb => cb(token));
     queue = [];
