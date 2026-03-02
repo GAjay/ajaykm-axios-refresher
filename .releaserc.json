@@ -1,0 +1,23 @@
+{
+    "branches": ["main"],
+    "tagFormat": "axios-refresh@${version}",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "."
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["CHANGELOG.md", "package.json"],
+          "message": "chore(release): axios-refresh ${nextRelease.version}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "name": "@ajaykm/axios-refresh-core",
+    "version": "0.0.0-development",
+    "type": "module",
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "sideEffects": false,
+    "files": ["dist"],
+    "peerDependencies": {
+      "axios": "^1"
+    },
+    "scripts": {
+      "build": "tsup",
+      "test": "jest"
+    }
+  }
