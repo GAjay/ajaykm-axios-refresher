@@ -1,15 +1,26 @@
 export const createCrossTabSync = () => {
-    if (typeof BroadcastChannel === "undefined")
-      return { broadcast: () => {}, listen: () => {} };
-  
-    const channel = new BroadcastChannel("axios-refresh");
-  
+  if (
+    typeof window === "undefined" ||
+    typeof (globalThis as any).BroadcastChannel === "undefined"
+  ) {
     return {
-      broadcast: (token: string) =>
-        channel.postMessage({ token }),
-      listen: (cb: (t: string) => void) =>
-        channel.addEventListener("message", e => {
-          if (e.data?.token) cb(e.data.token);
-        })
+      broadcast: () => {},
+      listen: () => {}
     };
+  }
+
+  const channel = new (globalThis as any).BroadcastChannel(
+    "axios-refresh"
+  );
+
+  return {
+    broadcast: (token: string) => {
+      channel.postMessage({ token });
+    },
+    listen: (cb: (t: string) => void) => {
+      channel.addEventListener("message", (e: any) => {
+        if (e.data?.token) cb(e.data.token);
+      });
+    }
   };
+};
