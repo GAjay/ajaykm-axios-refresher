@@ -2,8 +2,14 @@
 > Production-grade Axios refresh token engine with circuit breaker, cooldown lock, retry logic, cross-tab sync, anomaly detection, DevTools panel, and MCP support.
 
 [![npm version](https://img.shields.io/npm/v/@gajay/axios-refresh-core.svg)](https://www.npmjs.com/package/@gajay/axios-refresh-core)
-[![GitHub Actions Status](https://github.com/GAjay/gajay-axios-refresher/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/GAjay/gajay-axios-refresher/actions/workflows/main.yml)
 [![MIT License](https://img.shields.io/npm/l/@gajay/axios-refresh-core.svg)](LICENSE)
+
+---
+## ☕ Support This Project
+
+<a href="https://www.buymeacoffee.com/hackjin">
+  <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=🍺&slug=hackjin&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+</a>
 
 ---
 
